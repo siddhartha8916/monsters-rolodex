@@ -1,7 +1,11 @@
 import React, { Component } from "react";
+import ReactGA from 'react-ga';
 import "./App.css";
 import CardList from "./components/card-list/card-list.component";
 import SearchBox from "./components/search-box/search-box.component";
+
+const TRACKING_ID = "G-N4XC0G0XC2"; 
+ReactGA.initialize(TRACKING_ID);
 
 class App extends Component {
   constructor(props) {
